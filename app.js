@@ -39,15 +39,20 @@ app.use(express.static(path.join(__dirname,'public')));
 
 // for home page
 app.get('/',(req,res)=>{
-    res.render('index',{layout : 'landing'});
+    res.render('index');
+});
+
+app.get('/login',(req,res)=>{
+  res.render('login');
+});
+
+app.get('/register',(req,res)=>{
+  res.render('register');
 });
 
 
 // get pages
 app.use('/records',require('./routes/records'));
-
-
-
 
 
 app.listen(PORT,()=>{
