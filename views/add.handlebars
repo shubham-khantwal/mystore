@@ -1,0 +1,23 @@
+  <section id="add" class="container">
+    <div class="form-wrap">
+      <h1>Add A Page</h1>
+      <form action="/records/add" method="POST">
+        <div class="input-group">
+          <label for="title">Page Title</label>
+          <input type="text" name="title" id="title" class="input-box" placeholder="eg. Small Wordpress website, React developer"
+            maxlength="100" required>
+        </div>
+        <div class="input-group">
+          <label for="mapkeys">Tags</label>
+          <input type="text" name="mapkeys" id="technologies" class="input-box" placeholder="eg. javascript, react, PHP"
+          maxlength="100">
+        </div>
+        <div class="input-group">
+          <label for="pagedata">Write about the content</label>
+          <textarea name="pagedata" id="description" class="input-box" placeholder="Add your content here ..."
+            rows="10" required></textarea>
+        </div>
+        <input type="submit" value="Add Page" class="btn btn-reverse">
+      </form>
+    </div>
+  </section>

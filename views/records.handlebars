@@ -1,0 +1,15 @@
+ <section id="gigs" class="container">
+    <h1>ALL PAGES</h1>
+
+    {{#each records}}
+    <div class="gig">
+      <h3>{{title}}</h3>
+      <p>{{pagedata}}</p>
+      <div class="tech">
+        <small>Tags : <span>{{mapkeys}}</span></small>
+      </div>
+    </div>
+    {{else}}
+        <p>No Page is Available ! </p>
+    {{/each}}
+  </section>
