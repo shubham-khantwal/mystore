@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 // getting connection
-const db = require('../config/database');
+const db = require('./../config/database');
 
 // creating model
 const Record = db.define('record',{
