@@ -11,5 +11,5 @@ module.exports =  new Sequelize('pages','','', {
     acquire: 30000,
     idle: 10000
   },
-  storage : path.join(__dirname,'/pages.db')
+  storage : path.join(__dirname,'..','/pages.db')
 });
