@@ -1,5 +1,5 @@
 # mystore
-This is the demo App on book store
+This is the demo App
 
 # how to run the project
 1. download the folder
