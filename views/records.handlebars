@@ -1,12 +1,12 @@
  <section id="gigs" class="container">
     <h1>ALL PAGES</h1>
 
-    {{#each records}}
+    {{#each users}}
     <div class="gig">
-      <h3>{{title}}</h3>
-      <p>{{pagedata}}</p>
+      <h3>{{name}}</h3>
+      <p>{{emal}}</p>
       <div class="tech">
-        <small>Tags : <span>{{mapkeys}}</span></small>
+        <small>Tags : <span>{{password}}</span></small>
       </div>
     </div>
     {{else}}

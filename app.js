@@ -5,6 +5,9 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
 
+const db = require('./config/database');
+
+
 // initialized ap
 const app = express();
 
@@ -12,8 +15,6 @@ const app = express();
 //setting constatns
 const PORT = process.env.PORT || 3000;
 
-// getting sequelize connection
-const db = require('./config/database');
 
 
 // check for the connection and performing tasks
@@ -42,15 +43,8 @@ app.get('/',(req,res)=>{
     res.render('index');
 });
 
-app.get('/login',(req,res)=>{
-  res.render('login');
-});
-
-app.get('/register',(req,res)=>{
-  res.render('register');
-});
-
-
+//get users
+app.use('/users',require('./routes/users'));
 // get pages
 app.use('/records',require('./routes/records'));
 
